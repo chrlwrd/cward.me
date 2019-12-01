@@ -1,0 +1,15 @@
+version: '3'
+services:
+  caddy:
+    container_name: caddy
+    image: abiosoft/caddy:1.0.3-no-stats
+    environment:
+      - CADDYPATH=/caddy
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./Caddyfile:/etc/Caddyfile
+      - ./caddy:/caddy
+      - ./logs:/logs
+      - ./www:/www
