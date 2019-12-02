@@ -1,4 +1,4 @@
-*.cward.me *.charlesward.me.uk {
+cward.me www.cward.me charlesward.me.uk www.charlesward.me.uk {
   root /www/cward.me
   log /logs/access.log
 }
