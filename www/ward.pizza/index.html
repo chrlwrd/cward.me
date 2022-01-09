@@ -44,14 +44,14 @@
     console.log('TODO: Obfuscate this amazing code so no one can steal it.');
      
     $(document).ready(function () {
-      var colours = ['#e12301', '#e1d800', '#ce0000', '#fffa8a', '#479705', 'black'];
+      var colours = ['#e12301', '#e1d800', '#ce0000', '#fffa8a', '#479705', '#e1d800', 'black'];
       var loop = 0;
       
       var rainbow = function () {
         var elements = $('marquee');
       
         $.each(elements, function (index, value) {
-          var colour = (loop + index) % 6;
+          var colour = (loop + index) % 7;
           $(value).css('background-color', colours[colour]);
         });
         
