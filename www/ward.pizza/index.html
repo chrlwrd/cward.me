@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <meta name="google-site-verification" content="CnYtE_9a1o2FN2XKJ0JlFE6KEstFl4xQmDvhDFCmhi8" />
+  </head>
+  <strong>
+    <strong>
+      <strong>
+        <div class='very-outer-div'>
+          <div class='outer-div'>
+            <div class='inner-div'>
+              <marquee style='width: 200px' scrolldelay='75' scrollamount='10'>
+                Coming soon&trade;!
+              </marquee><br>
+              <marquee style='width: 200px' scrolldelay='100' scrollamount='15'>
+                Coming soon&trade;!
+              </marquee><br>
+              <marquee style='width: 200px' scrolldelay='125' scrollamount='20'>
+                Coming soon&trade;!
+              </marquee><br>
+              <marquee style='width: 200px' scrolldelay='150' scrollamount='30'>
+                Coming soon&trade;!
+              </marquee><br>
+              <marquee style='width: 200px' scrolldelay='175' scrollamount='40'>
+                Coming soon&trade;!
+              </marquee><br>
+              <marquee style='width: 200px' scrolldelay='200' scrollamount='50'>
+                Coming soon&trade;!
+              </marquee><br>
+              <marquee style='width: 200px' scrolldelay='225' scrollamount='5'>
+                Coming soon&trade;!
+              </marquee>
+            </div>
+          </div>
+        </div>
+      </strong>
+    </strong>
+  </strong>
+  <script src='//code.jquery.com/jquery-1.11.3.min.js'></script>
+  <script>
+    console.log('Why are you looking at the console? ಠ_ಠ');
+    console.log('TODO: Obfuscate this amazing code so no one can steal it.');
+    console.log("it works");
+     
+    $(document).ready(function () {
+      var colours = ['#e12301', '#e1d800', '#ce0000', '#fffa8a'];
+      var loop = 0;
+      
+      var rainbow = function () {
+        var elements = $('marquee');
+      
+        $.each(elements, function (index, value) {
+          var colour = (loop + index) % 4;
+          $(value).css('background-color', colours[colour]);
+        });
+        
+        loop++;
+      }
+    
+      window.setInterval(rainbow, 75);
+    });
+  </script>
+  <style>
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .very-outer-div {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      animation: move 12.7s infinite linear;
+    }
+
+    .outer-div {
+      animation: resize 2s infinite linear;
+    }
+
+    .inner-div {
+      animation: rotate 4.5s infinite linear;
+      border-right: 18px solid #dba24a; 
+      clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    }
+
+    @keyframes move {
+      0%   { transform: translate( 0%,    100  ); }
+      20%  { transform: translate(-100%, -50%  ); }
+      40%  { transform: translate( 50%,  -100% ); }
+      60%  { transform: translate( 100%,  0%   ); }
+      80%  { transform: translate(-100%,  50%  ); }
+      100% { transform: translate( 0%,    100% ); }
+    }
+
+    @keyframes resize {
+      0%   { transform: scale(1,1); }
+      50%  { transform: scale(4,4); }
+      100% { transform: scale(1,1); }
+    }
+
+    @keyframes rotate {
+      to   { transform: rotate(0deg); }
+      from { transform: rotate(359deg); }
+    }
+  </style>
+</html>
