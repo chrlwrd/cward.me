@@ -1,9 +1,4 @@
-cward.me www.cward.me charlesward.me.uk www.charlesward.me.uk {
-  root /www/cward.me
-  log /logs/access.log
-}
-
-ward.pizza www.ward.pizza {
+cward.me www.cward.me charlesward.me.uk www.charlesward.me.uk ward.pizza www.ward.pizza {
   redir https://charlie.ward.pizza
 }
 
