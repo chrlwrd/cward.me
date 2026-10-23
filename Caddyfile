@@ -4,5 +4,11 @@ cward.me www.cward.me charlesward.me.uk www.charlesward.me.uk ward.pizza www.war
 
 charlie.ward.pizza {
   root /www/ward.pizza
-  log /logs/access.log
+  file_server
+
+  log {
+    output file /logs/access.log {
+      mode 0644
+    }
+  }
 }
